@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="menu.css">
+
+
+<!-- ## nav -->
+
+<nav id='menu'>
+  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+  <ul>
+    <li><a href='http://'>Home</a></li>
+    <li><a class='dropdown-arrow' href='http://'>Products</a>
+      <ul class='sub-menus'>
+        <li><a href='http://'>Products 1</a></li>
+        <li><a href='http://'>Products 2</a></li>
+        <li><a href='http://'>Products 3</a></li>
+        <li><a href='http://'>Products 4</a></li>
+      </ul>
+    </li>
+    <li><a href='http://'>About</a></li>
+    <li><a class='dropdown-arrow' href='http://'>Servxxces</a>
+      <ul class='sub-menus'>
+        <li><a href='http://'>Services 1</a></li>
+        <li><a href='http://'>Services 12</a></li>
+        <li><a href='http://'>Services 3</a></li>
+      </ul>
+    </li>
+    <li><a href='http://'>Contact Us</a></li>
+  </ul>
+</nav>
+
+
+<h1>  Gestion de Clientes </h1>
+
+<a href="#" class="myButton"> Agregar </a>
+
+
+<!-- ## table -->
+<table id="customers">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Email</th>
+        <th>Telefono</th>
+        <th>Acciones</th>
+    </tr>
+    <tr>
+        <td>Lucas</td>
+        <td>Moy</td>
+        <td>lucasmoyy@gmail.com</td>
+        <td>35622</td>
+        <td> 
+            <a href="#" class="myButton"> Editar </a>
+            <a href="#" class="myButtonRed"> Eliminar </a>
+        </td>
+    </tr>
+    <tr>
+        <td>Pepe</td>
+        <td>Angelini</td>
+        <td>pep.angelini@gmail.com</td>
+        <td>45712</td>
+        <td> 
+            <a href="#" class="myButton"> Editar </a>
+            <a href="#" class="myButtonRed"> Eliminar </a>
+        </td>
+    </tr>
+</table>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modale" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2>Please Login</h2>
+      <a href="#" class="btn-close closemodale" aria-hidden="true">&times;</a>
+    </div>
+    <div class="modal-body">
+      <input type="text" name="u" placeholder="User" size="20" /><br>
+      <input type="text" name="p" placeholder="&bull;&bull;&bull;&bull;" size="20" /></div>
+    <div class="modal-footer">
+  
+
+      <a href="#" class="btn" id="btn_ingresar">Login</a>
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
